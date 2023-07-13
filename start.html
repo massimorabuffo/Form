@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Insert your email:</label>
+      <input type="email" name="email" id="email" placeholder="mario.rossi@gmail.com" required>
+      <label for="password">Insert your new password:</label>
+      <input type="password" name="password" id="password" required>
+      <label for="name">Insert your name:</label>
+      <input type="text" name="name" id="name" placeholder="Mario" 
+             required pattern="[A-Za-z]+" maxlength="20" minlength="2">
+      <label for="lastname">Insert your lastname:</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Rossi" 
+             required pattern="[A-Za-z]+" maxlength="20" minlength="2">
+      <label for="birth_date">Select your birth date:</label>
+      <input type="date" name="birth_date" id="birth_date" required>
+      <label for="phone_number">Insert your phone number:</label>
+      <input type="number" name="phone_number" id="phone_number">
+      <label for="plan">Choose your plan</label>
+      <select name="plan" id="plan" required>
+        <option value="free_plan">Free plan</option>
+        <option value="plan_1">Plan 1: 5$/month</option>
+        <option value="plan_2">Plan 2: 8$/month</option>
+        <option value="plan_3">Plan 3: 12$/month</option>
+      </select>
+      <label for="checkbox">Select this option for a Pro Plan</label>
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <label for="credit_card_number">Insert your credit card number:</label>
+      <input type="number" name="credit_card_number" id="credit_card_number" required>
+      <label for="cvc">Insert your credit card cvc:</label>
+      <input type="number" name="cvc" id="cvc" required>
+      <label for="expiration_date">Insert the expiration date of the credit card:</label>
+      <input type="date" name="expiration_date" id="expiration_date" required>
+      <label for="billing_address">Insert your billing address:</label>
+      <input type="text" name="billing_address" id="billing_address" required>
+      <div>
+        <button>Submit</button>
+      </div>
+  </form>
+  </body>
+</html>
